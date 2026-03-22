@@ -5,21 +5,21 @@
 class Internctl < Formula
   desc "Command-line client for the internal management platform"
   homepage "https://github.com/sbekti/internctl"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sbekti/internctl/releases/download/v0.1.2/internctl_0.1.2_darwin_amd64.tar.gz"
-      sha256 "d5f301b27d379845d1b52bfc5e402408ea4a468d0280597cd0ba1f15c2afd445"
+      url "https://github.com/sbekti/internctl/releases/download/v0.1.3/internctl_0.1.3_darwin_amd64.tar.gz"
+      sha256 "03bb47c4a1b1d4cf71a84a5f5ee421b48cf2632a06f3eef313ae8c2df9a835e8"
 
       define_method(:install) do
         bin.install "internctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sbekti/internctl/releases/download/v0.1.2/internctl_0.1.2_darwin_arm64.tar.gz"
-      sha256 "61f1794c6c6951f824ccc77013b4c12b765e28965cd2b9c8ebd8fb167d1b76d2"
+      url "https://github.com/sbekti/internctl/releases/download/v0.1.3/internctl_0.1.3_darwin_arm64.tar.gz"
+      sha256 "83b202e53a38b93a44f4dbcad351e78275e3536d0fb21a40881c800400e15870"
 
       define_method(:install) do
         bin.install "internctl"
@@ -29,15 +29,15 @@ class Internctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sbekti/internctl/releases/download/v0.1.2/internctl_0.1.2_linux_amd64.tar.gz"
-      sha256 "93f1cafc594ee0cb0ad3bb05bdd7dfcdb09ff6239040193d31b3f0220e10d2d4"
+      url "https://github.com/sbekti/internctl/releases/download/v0.1.3/internctl_0.1.3_linux_amd64.tar.gz"
+      sha256 "5eaaea77b2d862f2eaac116d0d4396b5d2713a09c705e4a6d31b55904e7e9598"
       define_method(:install) do
         bin.install "internctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sbekti/internctl/releases/download/v0.1.2/internctl_0.1.2_linux_arm64.tar.gz"
-      sha256 "8ad031d2670988cb6246804aae16671355c44dcc671faaf1b4299f2075745c79"
+      url "https://github.com/sbekti/internctl/releases/download/v0.1.3/internctl_0.1.3_linux_arm64.tar.gz"
+      sha256 "46801d254d89f8a8d35ac1912f723bb8df8ea584d15370b7c549eff86653190e"
       define_method(:install) do
         bin.install "internctl"
       end
