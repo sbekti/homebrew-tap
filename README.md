@@ -16,7 +16,7 @@ Install `internctl`:
 brew install internctl
 ```
 
-Or install directly from the fully qualified formula name:
+Or install directly from the fully qualified cask name:
 
 ```bash
 brew install sbekti/tap/internctl
@@ -29,4 +29,4 @@ brew install sbekti/tap/internctl
 
 ## Source and release flow
 
-`internctl` is sourced and released from [sbekti/intern](https://github.com/sbekti/intern). The generated formula is updated automatically by the monorepo's signed `vX.Y.Z` release workflow using GoReleaser.
+`internctl` is sourced and released from [sbekti/intern](https://github.com/sbekti/intern). The generated cask is updated automatically by the monorepo's signed `vX.Y.Z` release workflow using GoReleaser.
