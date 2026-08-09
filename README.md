@@ -27,6 +27,6 @@ brew install sbekti/tap/internctl
 - `internctl`
   - command-line client for the internal management platform
 
-## Release flow
+## Source and release flow
 
-Formula updates are published automatically from tagged `internctl` releases via GitHub Actions and GoReleaser.
+`internctl` is sourced and released from [sbekti/intern](https://github.com/sbekti/intern). The generated formula is updated automatically by the monorepo's signed `vX.Y.Z` release workflow using GoReleaser.
